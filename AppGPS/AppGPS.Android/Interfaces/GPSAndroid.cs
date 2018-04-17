@@ -10,8 +10,6 @@ namespace AppGPS.Droid.Interfaces
     {
         public void CheckGPSEnabled()
         {
-            //Xamarin.Forms.Forms.Context.StartActivity(new Android.Content.Intent(Android.Provider.Settings.ActionLocationSourceSettings));
-
             LocationManager locManager = (LocationManager)Xamarin.Forms.Forms.Context.GetSystemService(Context.LocationService);
             var gpsEnabled = locManager.IsProviderEnabled(LocationManager.GpsProvider);
 
